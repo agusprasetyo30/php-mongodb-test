@@ -54,7 +54,7 @@
          $bulk->insert($data);
          $mng->executeBulkWrite('dataCPU.data', $bulk);
 
-         echo "Tambah spesifikasi sukses";
+         echo(json_encode(["status" => 200, "message" => 'success']));
       }
       
    } catch (MongoDB\Driver\Exception\Exception $e) {
