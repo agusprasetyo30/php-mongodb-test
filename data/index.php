@@ -36,7 +36,7 @@
                
                ]);
          }
-
+         
          echo(json_encode($arr));
 
       // jika ada keadaan post
